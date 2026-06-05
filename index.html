@@ -586,7 +586,7 @@ let chestOpened=false;
 function openChest(){
   if(chestOpened) return;
   chestOpened=true;
-  tryStartMusic();
+  document.getElementById('bg_music').play();
   document.getElementById('cta').disabled=true;
   document.getElementById('lid').classList.add('open');
 
